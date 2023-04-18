@@ -27,9 +27,9 @@ while True:
        else:
           print("Items does not exist")
     elif choice == 'C':
-        delit = input("Enter the item to be removed:")
-        if delit in shoppingCart:
-            shoppingCart.pop(delit)
+        remove = input("Enter the item to be removed:")
+        if remove in shoppingCart:
+            shoppingCart.pop(remove)
             print("Product removed from cart")
         else:
             print("items does not exist")
