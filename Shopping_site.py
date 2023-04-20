@@ -12,11 +12,14 @@ while True:
         for i in range(products):
            item = input("Enter an item: ")
            brand = input("Enter the brand name: ")
-           shoppingCart['product_name'] = item
-           shoppingCart['Brand'] = brand
+           shoppingCart[item] = brand
+           
         print("You added following items to the cart ")
-        print(shoppingCart["product_name":"Brand"])
-       
+        
+        for item,brand in shoppingCart.items():
+           print(f"{item}:{brand}")
+      elif products<0:
+         print("invalid input")
        
       else:
         print("You can add max 5 items")
